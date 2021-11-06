@@ -3,10 +3,10 @@
 A project developed by
 
 <ul>
-  <li>Daniel Shterev<\li>
-  <li>Victoria Velichkova<\li>
-  <li>Ventsislav Iliev<\li>
-  <li>Malthe Gram<\li>
-  <li>Thor Find Andersen<\li>
+  <li>Daniel Shterev
+  <li>Victoria Velichkova
+  <li>Ventsislav Iliev
+  <li>Malthe Gram
+  <li>Thor Find Andersen
 <\ul>
 
