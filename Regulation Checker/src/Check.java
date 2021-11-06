@@ -1,8 +1,9 @@
 import Models.Room;
+import Models.Ceiling;
 
 public class Check {
 
-    private final double ceilingHeight = 2500;
+    private static final double ceilingHeight = 2500;
     private static double livingRoomSize, kitchenSize, bedroomSize, masterBedroomSize, bathroomSize;
 
     public static void numOfRooms(int numOfRooms, Room room){
@@ -307,5 +308,14 @@ public class Check {
         }
 
 
+    }
+
+    public static void checkCeiling(Ceiling ceiling){
+        if(ceiling.getHeight() < ceilingHeight){
+            System.out.println(ceiling.getId() + " is too low.");
+        }
+        else{
+            System.out.println("All good.");
+        }
     }
 }

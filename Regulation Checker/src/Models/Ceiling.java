@@ -2,20 +2,20 @@ package Models;
 
 public class Ceiling {
     String family;
-    int height;
+    double height;
     long id;
 
     public Ceiling(String family, String yPosition, String id) {
         this.family = family;
-        this.height = Integer.parseInt(yPosition);
-        this.id = Integer.parseInt(id);
+        this.height = Double.parseDouble(yPosition);
+        this.id = Long.parseLong(id);
     }
 
     public String getFamily() {
         return family;
     }
 
-    public int getHeight() {
+    public double getHeight() {
         return height;
     }
 
