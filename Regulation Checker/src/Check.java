@@ -3,9 +3,9 @@ import Models.Room;
 public class Check {
 
     private final double ceilingHeight = 2500;
-    private double livingRoomSize, kitchenSize, bedroomSize, masterBedroomSize, bathroomSize;
+    private static double livingRoomSize, kitchenSize, bedroomSize, masterBedroomSize, bathroomSize;
 
-    public void numOfRooms(int numOfRooms, Room room){
+    public static void numOfRooms(int numOfRooms, Room room){
 
         if(numOfRooms == 2){
             livingRoomSize = 10000;
