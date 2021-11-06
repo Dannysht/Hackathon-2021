@@ -51,5 +51,8 @@ public class Check {
             singleRoomSize = 6.5;
             bathroomSize = 6.0;
         }
+        else{
+            System.out.println("Number of rooms not stated.");
+        }
     }
 }
