@@ -14,11 +14,11 @@ public class Room
     }
 
 
-    public long getRoomId() {
+    public long getID() {
         return roomId;
     }
 
-    public double getRoomArea() {
+    public double getRoomSize() {
         return roomArea;
     }
 

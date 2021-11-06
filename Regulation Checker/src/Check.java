@@ -1,9 +1,11 @@
+import Models.Room;
+
 public class Check {
 
     private final double ceilingHeight = 2500;
     private double livingRoomSize, kitchenSize, bedroomSize, masterBedroomSize, bathroomSize;
 
-    public void numOfRooms(int numOfRooms){
+    public void numOfRooms(int numOfRooms, Room room){
 
         if(numOfRooms == 2){
             livingRoomSize = 10000;
@@ -37,7 +39,7 @@ public class Check {
                 }
             }
 
-            if(room.getRoomType().equalsIgnoreCase("master bedroom") || room.getRoomType().equaldIgnoreCase("bedroom")){
+            if(room.getRoomType().equalsIgnoreCase("master bedroom") || room.getRoomType().equalsIgnoreCase("bedroom")){
                 System.out.println("This type of room should not be in this type of apartment.");
             }
 
@@ -84,7 +86,7 @@ public class Check {
                 }
             }
 
-            if(room.getRoomType().equaldIgnoreCase("bedroom")){
+            if(room.getRoomType().equalsIgnoreCase("bedroom")){
                 System.out.println("This type of room should not be in this type of apartment.");
             }
 
@@ -199,7 +201,6 @@ public class Check {
             kitchenSize = 6000;
             bedroomSize = 9000;
             masterBedroomSize = 10500;
-            singleRoomSize = 6500;
             bathroomSize = 4500;
 
             if(room.getRoomType().equalsIgnoreCase("living room")){
@@ -253,7 +254,6 @@ public class Check {
             kitchenSize = 6000;
             bedroomSize = 9000;
             masterBedroomSize = 10500;
-            singleRoomSize = 6500;
             bathroomSize = 6000;
 
             if(room.getRoomType().equalsIgnoreCase("living room")){
