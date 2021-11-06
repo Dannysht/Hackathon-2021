@@ -10,8 +10,7 @@ import java.util.Scanner;
 
 
 public class FileReader {
-    public FileReader() {
-    }
+    public FileReader() {}
 
     private static int roomCounter = 0;
     private static ArrayList<Ceiling> ceilingList = new ArrayList<>();
