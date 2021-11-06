@@ -15,28 +15,19 @@ public class Check {
 
             if(room.getRoomType().equalsIgnoreCase("living room")){
                 if(room.getRoomSize() < livingRoomSize){
-                    System.out.println(room.getID() + " has size issue.");
-                }
-                else{
-                    System.out.println("All good.");
+                    System.out.println("Room: " + room.getID() + " has size issue.");
                 }
             }
 
             if(room.getRoomType().equalsIgnoreCase("kitchen")){
                 if(room.getRoomSize() < kitchenSize){
-                    System.out.println(room.getID() + " has size issue.");
-                }
-                else{
-                    System.out.println("All good.");
+                    System.out.println("Room: " + room.getID() + " has size issue.");
                 }
             }
 
             if(room.getRoomType().equalsIgnoreCase("bathroom")){
                 if(room.getRoomSize() < bathroomSize){
-                    System.out.println(room.getID() + " has size issue.");
-                }
-                else{
-                    System.out.println("All good.");
+                    System.out.println("Room: " + room.getID() + " has size issue.");
                 }
             }
 
@@ -53,37 +44,25 @@ public class Check {
 
             if(room.getRoomType().equalsIgnoreCase("living room")){
                 if(room.getRoomSize() < livingRoomSize){
-                    System.out.println(room.getID() + " has size issue.");
-                }
-                else{
-                    System.out.println("All good.");
+                    System.out.println("Room: " + room.getID() + " has size issue.");
                 }
             }
 
             if(room.getRoomType().equalsIgnoreCase("kitchen")){
                 if(room.getRoomSize() < kitchenSize){
-                    System.out.println(room.getID() + " has size issue.");
-                }
-                else{
-                    System.out.println("All good.");
+                    System.out.println("Room: " + room.getID() + " has size issue.");
                 }
             }
 
             if(room.getRoomType().equalsIgnoreCase("master bedroom")){
                 if(room.getRoomSize() < masterBedroomSize){
-                    System.out.println(room.getID() + " has size issue.");
-                }
-                else{
-                    System.out.println("All good.");
+                    System.out.println("Room: " + room.getID() + " has size issue.");
                 }
             }
 
             if(room.getRoomType().equalsIgnoreCase("bathroom")){
                 if(room.getRoomSize() < bathroomSize){
-                    System.out.println(room.getID() + " has size issue.");
-                }
-                else{
-                    System.out.println("All good.");
+                    System.out.println("Room: " + room.getID() + " has size issue.");
                 }
             }
 
@@ -102,47 +81,32 @@ public class Check {
 
             if(room.getRoomType().equalsIgnoreCase("living room")){
                 if(room.getRoomSize() < livingRoomSize){
-                    System.out.println(room.getID() + " has size issue.");
-                }
-                else{
-                    System.out.println("All good.");
+                    System.out.println("Room: " + room.getID() + " has size issue.");
                 }
             }
 
             if(room.getRoomType().equalsIgnoreCase("kitchen")){
                 if(room.getRoomSize() < kitchenSize){
-                    System.out.println(room.getID() + " has size issue.");
                 }
-                else{
-                    System.out.println("All good.");
-                }
+                    System.out.println("Room: " + room.getID() + " has size issue.");
             }
 
             if(room.getRoomType().equalsIgnoreCase("bedroom")){
                 if(room.getRoomSize() < bedroomSize){
-                    System.out.println(room.getID() + " has size issue.");
                 }
-                else{
-                    System.out.println("All good.");
-                }
+                    System.out.println("Room: " + room.getID() + " has size issue.");
             }
 
             if(room.getRoomType().equalsIgnoreCase("master bedroom")){
                 if(room.getRoomSize() < masterBedroomSize){
-                    System.out.println(room.getID() + " has size issue.");
                 }
-                else{
-                    System.out.println("All good.");
-                }
+                    System.out.println("Room: " + room.getID() + " has size issue.");
             }
 
             if(room.getRoomType().equalsIgnoreCase("bathroom")){
                 if(room.getRoomSize() < bathroomSize){
-                    System.out.println(room.getID() + " has size issue.");
                 }
-                else{
-                    System.out.println("All good.");
-                }
+                    System.out.println("Room: " + room.getID() + " has size issue.");
             }
         }
         else if(numOfRooms == 5){
@@ -154,47 +118,32 @@ public class Check {
 
             if(room.getRoomType().equalsIgnoreCase("living room")){
                 if(room.getRoomSize() < livingRoomSize){
-                    System.out.println(room.getID() + " has size issue.");
                 }
-                else{
-                    System.out.println("All good.");
-                }
+                    System.out.println("Room: " + room.getID() + " has size issue.");
             }
 
             if(room.getRoomType().equalsIgnoreCase("kitchen")){
                 if(room.getRoomSize() < kitchenSize){
-                    System.out.println(room.getID() + " has size issue.");
                 }
-                else{
-                    System.out.println("All good.");
-                }
+                    System.out.println("Room: " + room.getID() + " has size issue.");
             }
 
             if(room.getRoomType().equalsIgnoreCase("bedroom")){
                 if(room.getRoomSize() < bedroomSize){
-                    System.out.println(room.getID() + " has size issue.");
                 }
-                else{
-                    System.out.println("All good.");
-                }
+                    System.out.println("Room: " + room.getID() + " has size issue.");
             }
 
             if(room.getRoomType().equalsIgnoreCase("master bedroom")){
                 if(room.getRoomSize() < masterBedroomSize){
-                    System.out.println(room.getID() + " has size issue.");
                 }
-                else{
-                    System.out.println("All good.");
-                }
+                    System.out.println("Room: " + room.getID() + " has size issue.");
             }
 
             if(room.getRoomType().equalsIgnoreCase("bathroom")){
                 if(room.getRoomSize() < bathroomSize){
-                    System.out.println(room.getID() + " has size issue.");
                 }
-                else{
-                    System.out.println("All good.");
-                }
+                    System.out.println("Room: " + room.getID() + " has size issue.");
             }
         }
         else if(numOfRooms == 6){
@@ -206,46 +155,31 @@ public class Check {
 
             if(room.getRoomType().equalsIgnoreCase("living room")){
                 if(room.getRoomSize() < livingRoomSize){
-                    System.out.println(room.getID() + " has size issue.");
                 }
-                else{
-                    System.out.println("All good.");
-                }
+                    System.out.println("Room: " + room.getID() + " has size issue.");
             }
 
             if(room.getRoomType().equalsIgnoreCase("kitchen")){
                 if(room.getRoomSize() < kitchenSize){
-                    System.out.println(room.getID() + " has size issue.");
                 }
-                else{
-                    System.out.println("All good.");
-                }
+                    System.out.println("Room: " + room.getID() + " has size issue.");
             }
 
             if(room.getRoomType().equalsIgnoreCase("bedroom")){
                 if(room.getRoomSize() < bedroomSize){
-                    System.out.println(room.getID() + " has size issue.");
-                }
-                else{
-                    System.out.println("All good.");
+                    System.out.println("Room: " + room.getID() + " has size issue.");
                 }
             }
 
             if(room.getRoomType().equalsIgnoreCase("master bedroom")){
                 if(room.getRoomSize() < masterBedroomSize){
-                    System.out.println(room.getID() + " has size issue.");
-                }
-                else{
-                    System.out.println("All good.");
+                    System.out.println("Room: " + room.getID() + " has size issue.");
                 }
             }
 
             if(room.getRoomType().equalsIgnoreCase("bathroom")){
                 if(room.getRoomSize() < bathroomSize){
-                    System.out.println(room.getID() + " has size issue.");
-                }
-                else{
-                    System.out.println("All good.");
+                    System.out.println("Room: " + room.getID() + " has size issue.");
                 }
             }
 
@@ -259,46 +193,31 @@ public class Check {
 
             if(room.getRoomType().equalsIgnoreCase("living room")){
                 if(room.getRoomSize() < livingRoomSize){
-                    System.out.println(room.getID() + " has size issue.");
-                }
-                else{
-                    System.out.println("All good.");
+                    System.out.println("Room: " + room.getID() + " has size issue.");
                 }
             }
 
             if(room.getRoomType().equalsIgnoreCase("kitchen")){
                 if(room.getRoomSize() < kitchenSize){
-                    System.out.println(room.getID() + " has size issue.");
-                }
-                else{
-                    System.out.println("All good.");
+                    System.out.println("Room: " + room.getID() + " has size issue.");
                 }
             }
 
             if(room.getRoomType().equalsIgnoreCase("bedroom")){
                 if(room.getRoomSize() < bedroomSize){
-                    System.out.println(room.getID() + " has size issue.");
-                }
-                else{
-                    System.out.println("All good.");
+                    System.out.println("Room: " + room.getID() + " has size issue.");
                 }
             }
 
             if(room.getRoomType().equalsIgnoreCase("master bedroom")){
                 if(room.getRoomSize() < masterBedroomSize){
-                    System.out.println(room.getID() + " has size issue.");
-                }
-                else{
-                    System.out.println("All good.");
+                    System.out.println("Room: " + room.getID() + " has size issue.");
                 }
             }
 
             if(room.getRoomType().equalsIgnoreCase("bathroom")){
                 if(room.getRoomSize() < bathroomSize){
-                    System.out.println(room.getID() + " has size issue.");
-                }
-                else{
-                    System.out.println("All good.");
+                    System.out.println("Room: " + room.getID() + " has size issue.");
                 }
             }
 
@@ -312,10 +231,7 @@ public class Check {
 
     public static void checkCeiling(Ceiling ceiling){
         if(ceiling.getHeight() < ceilingHeight){
-            System.out.println(ceiling.getId() + " is too low.");
-        }
-        else{
-            System.out.println("All good.");
+            System.out.println("Ceiling: " + ceiling.getId() + " is too low.");
         }
     }
 }
