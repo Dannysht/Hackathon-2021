@@ -2,8 +2,11 @@
 
 A project developed by
 
-Daniel Shterev
-Victoria Velichkova
-Ventsislav Iliev
-Malthe Gram
-Thor Find Andersen
+<ul>
+  <li>Daniel Shterev<\li>
+  <li>Victoria Velichkova<\li>
+  <li>Ventsislav Iliev<\li>
+  <li>Malthe Gram<\li>
+  <li>Thor Find Andersen<\li>
+<\ul>
+
