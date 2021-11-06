@@ -1,12 +1,7 @@
 public class Check {
 
-    private double ceilingHeight;
-    private double livingRoomSize;
-    private double kitchenSize;
-    private double doubleRoomSize;
-    private double masterBedroomSize;
-    private double singleRoomSize;
-    private double bathroomSize;
+    private final double ceilingHeight = 2500;
+    private double livingRoomSize, kitchenSize, doubleRoomSize, masterBedroomSize, singleRoomSize, bathroomSize;
 
     public void numOfRooms(int numOfRooms){
 
@@ -52,7 +47,7 @@ public class Check {
             bathroomSize = 6.0;
         }
         else{
-            System.out.println("Number of rooms not stated.");
+            System.out.println("Number of rooms out of bounds.");
         }
     }
 }
