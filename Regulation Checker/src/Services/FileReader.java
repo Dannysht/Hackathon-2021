@@ -13,6 +13,7 @@ public class FileReader {
     public FileReader() {
     }
 
+    private static int roomCounter = 0;
     private static ArrayList<Ceiling> ceilingList = new ArrayList<>();
     private static ArrayList<Room> roomList = new ArrayList<>();
 
@@ -39,7 +40,6 @@ public class FileReader {
     public static ArrayList<Room> loadRooms(String filepath) {
 
 
-        int roomCounter = 0;
         try {
             Scanner dataFile = new Scanner(new File(filepath));
             dataFile.nextLine();
@@ -56,5 +56,9 @@ public class FileReader {
             System.out.println(e.getMessage());
         }
         return roomList;
+    }
+
+    public static int getRoomCounter() {
+        return roomCounter;
     }
 }
