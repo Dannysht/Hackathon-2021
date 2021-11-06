@@ -4,24 +4,18 @@ public class Room
 {
     private String roomType;
     private double roomArea;
-    private int roomId;
-    private double ceilingHeight;
+    private long roomId;
 
-    public Room(String roomType, String roomId, String ceilingHeight, String roomArea)
+    public Room(String roomType, String roomId, String roomArea)
     {
         this.roomType = roomType;
-        this.roomId = Integer.parseInt(roomId);
-        this.ceilingHeight = Double.parseDouble(ceilingHeight);
+        this.roomId = Long.parseLong(roomId);
         this.roomArea = Integer.parseInt(roomArea);
     }
 
 
-    public int getRoomId() {
+    public long getRoomId() {
         return roomId;
-    }
-
-    public double getCeilingHeight() {
-        return ceilingHeight;
     }
 
     public double getRoomArea() {
@@ -37,8 +31,6 @@ public class Room
         return "Room{" +
                 "roomType='" + roomType + '\'' +
                 ", roomArea=" + roomArea +
-                ", roomId=" + roomId +
-                ", ceilingHeight=" + ceilingHeight +
-                '}';
+                ", roomId=" + roomId;
     }
 }

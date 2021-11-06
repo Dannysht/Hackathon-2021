@@ -1,12 +1,12 @@
 import Services.FileReader;
 
-import java.io.File;
-
 public class Main
 {
 
     public static void main(String[] args) {
-        System.out.println(FileReader.loadData());
+        String filepath = "/Users/malthegram/IdeaProjects/Hackathon-2021/Regulation Checker/src/resources/Ceiling-Schedule.csv";
+
+        System.out.println(FileReader.loadCeiling(filepath));
 
     }
 }
