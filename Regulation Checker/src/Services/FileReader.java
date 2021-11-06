@@ -38,13 +38,15 @@ public class FileReader {
 
     public static ArrayList<Room> loadRooms(String filepath) {
 
+
+        int roomCounter = 0;
         try {
             Scanner dataFile = new Scanner(new File(filepath));
             dataFile.nextLine();
             while (dataFile.hasNext()) {
                 String[] cL = dataFile.nextLine().split(";"); // cL is the current line in the scanner
                 Room room = new Room(cL[0], cL[1], cL[2]);
-
+                ++roomCounter;
                 roomList.add(room);
 
             }
