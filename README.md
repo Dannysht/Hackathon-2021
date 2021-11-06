@@ -8,5 +8,4 @@ A project developed by
   <li>Ventsislav Iliev
   <li>Malthe Gram
   <li>Thor Find Andersen
-<\ul>
 
