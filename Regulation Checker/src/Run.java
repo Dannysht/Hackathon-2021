@@ -8,12 +8,12 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
-public class Main
+public class Run
 {
+        static String filepath = "D:\\Main\\Hackathon\\Hackathon-2021\\Regulation Checker\\src\\resources\\Ceiling-Schedule.csv";
 
     public static void main(String[] args) {
 
-        String filepath = "D:\\Main\\Hackathon\\Hackathon-2021\\Regulation Checker\\src\\resources\\Ceiling-Schedule.csv";
 
         Windows.makeFilereadWindow();
         /*

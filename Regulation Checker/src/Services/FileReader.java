@@ -46,6 +46,10 @@ public class FileReader {
                 String[] cL = dataFile.nextLine().split(";"); // cL is the current line in the scanner
                 Room room = new Room(cL[0], cL[1], cL[2]);
                 ++roomCounter;
+                if(room.getRoomType().equalsIgnoreCase("bathroom") || room.getRoomType().equalsIgnoreCase("entrance") || room.getRoomType().equalsIgnoreCase("hallway"))
+                {
+                    roomCounter--;
+                }
                 roomList.add(room);
 
             }

@@ -10,7 +10,7 @@ public class Room
     {
         this.roomType = roomType;
         this.roomId = Long.parseLong(roomId);
-        this.roomArea = Integer.parseInt(roomArea);
+        this.roomArea = Double.parseDouble(roomArea);
     }
 
 

@@ -1,9 +1,11 @@
 import Models.Ceiling;
+import Models.Room;
 import Services.FileReader;
 
 import javax.swing.*;
 import javax.swing.border.EtchedBorder;
 import javax.swing.border.TitledBorder;
+import java.awt.*;
 import java.util.ArrayList;
 
 public class Windows {
@@ -19,7 +21,7 @@ public class Windows {
         JButton roomButton=new JButton();
         roomButton.setText("Check Room Regulations");
         JTextField roomtextField=new JTextField(20);
-        ceilingButton.addActionListener(e -> checkRooms( roomtextField.getText() ) );
+        roomButton.addActionListener(e -> checkRooms( roomtextField.getText() ) );
 
 
         JPanel panel=new JPanel();
@@ -52,7 +54,25 @@ public class Windows {
     }
 
     public static void checkRooms(String filePath){
-
+        ArrayList<Room> roomList = FileReader.loadRooms(filePath);
+        ArrayList<String> messageList=new ArrayList<>();
+        int i = 0;
+        for(Room room : roomList){
+            ArrayList<String>messages = Check.numOfRooms(FileReader.getRoomCounter(),room, roomList);
+            if(messages!=null)
+            {
+                for(String message: messages) {
+                    if(message.equalsIgnoreCase("You do not meet the requirements for an appartment") && i == 0)
+                    {
+                        ++i;
+                        messageList.add(message);
+                    }
+                }
+            }
+        }
+        String messages="";
+        for(String message:messageList) messages+=message+"\n";
+        makeMessageWindow(messages);
     }
 
     public static void makeMessageWindow(String messages){
@@ -72,5 +92,4 @@ public class Windows {
         frame.setLocationRelativeTo ( null );
         frame.setVisible ( true );
     }
-
 }
