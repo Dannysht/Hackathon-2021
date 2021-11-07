@@ -9,7 +9,7 @@ public class Check {
     private static final double ceilingHeight = 2500, entranceOrHallway = 1.300;
     private static double livingRoomSize, kitchenSize, bedroomSize, masterBedroomSize, bathroomSize;
     private static boolean issueSomewhere = false;
-    private static int issueAlreadyDisplayed = 0;
+    private static boolean issueAlreadyDisplayed = false;
     private static boolean livingRoom = false, kitchen = false, bathroom = false;
 
     public static boolean isApartmentSuitable(ArrayList<Room> rooms)
@@ -386,18 +386,21 @@ public class Check {
                 messages.add("Number of rooms out of bounds.");
             }
         }
-        else if(issueAlreadyDisplayed == 0)
+        else if(issueAlreadyDisplayed == false)
         {
-            issueAlreadyDisplayed++;
+            issueAlreadyDisplayed = true;
             messages.add("You do not meet the requirements for an appartment");
         }
-        if (issueSomewhere == false && issueAlreadyDisplayed == 0) {
-            messages.add("No issues found in room with id: " + room.getID());
-            ++issueAlreadyDisplayed;
+        if (issueSomewhere == false && issueAlreadyDisplayed == false) {
+            messages.add("No issues found");
+            issueAlreadyDisplayed = true;
         }
 
-        issueAlreadyDisplayed = 0;
         return messages;
+    }
+
+    public static void setIssueAlreadyDisplayed(boolean issueAlreadyDisplayed) {
+        Check.issueAlreadyDisplayed = issueAlreadyDisplayed;
     }
 
     public static String checkCeiling(Ceiling ceiling){

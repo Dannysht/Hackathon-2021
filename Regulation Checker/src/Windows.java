@@ -22,7 +22,7 @@ public class Windows {
         roomButton.setText("Check Room Regulations");
         JTextField roomtextField=new JTextField(20);
         roomButton.addActionListener(e -> checkRooms( roomtextField.getText() ) );
-
+        Run.filepath = roomtextField.getText();
 
         JPanel panel=new JPanel();
         panel.add(label);
@@ -54,6 +54,10 @@ public class Windows {
     }
 
     public static void checkRooms(String filePath){
+        if(!Run.filepath.equals(filePath))
+        {
+            Check.setIssueAlreadyDisplayed(false);
+        }
         ArrayList<Room> roomList = FileReader.loadRooms(filePath);
         ArrayList<String> messageList=new ArrayList<>();
         for(Room room : roomList){
