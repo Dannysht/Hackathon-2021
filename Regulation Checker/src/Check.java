@@ -386,14 +386,17 @@ public class Check {
                 messages.add("Number of rooms out of bounds.");
             }
         }
-        else
+        else if(issueAlreadyDisplayed == 0)
         {
+            issueAlreadyDisplayed++;
             messages.add("You do not meet the requirements for an appartment");
         }
         if (issueSomewhere == false && issueAlreadyDisplayed == 0) {
-            messages.add("No issues found!");
+            messages.add("No issues found in room with id: " + room.getID());
             ++issueAlreadyDisplayed;
         }
+
+        issueAlreadyDisplayed = 0;
         return messages;
     }
 

@@ -1,2 +1,6 @@
-rooomType; roomId; ceilingHeight; roomArea;
-Kitchen;1;50;10
+family;
+Bathroom;343498;7.343233821
+Master Bedroom;343500;11.04172797
+Hallway;343502;9.462164148
+Living Room;343504;17.32723135
+Entrance;343506;8.765043941
