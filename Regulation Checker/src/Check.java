@@ -6,13 +6,14 @@ import java.util.ArrayList;
 
 public class Check {
 
-    private static final double ceilingHeight = 2500, entranceOrHallway = 1300;
+    private static final double ceilingHeight = 2500, entranceOrHallway = 1.300;
     private static double livingRoomSize, kitchenSize, bedroomSize, masterBedroomSize, bathroomSize;
     private static boolean issueSomewhere = false;
+    private static int issueAlreadyDisplayed = 0;
+    private static boolean livingRoom = false, kitchen = false, bathroom = false;
 
     public static boolean isApartmentSuitable(ArrayList<Room> rooms)
     {
-        boolean livingRoom = false, kitchen = false, bathroom = false;
         for (Room room : rooms) {
             if (room.getRoomType().equalsIgnoreCase("living room")){
                 livingRoom = true;
@@ -38,9 +39,9 @@ public class Check {
         ArrayList<String> messages=new ArrayList<>();
         if(isApartmentSuitable(rooms) == true) {
             if (numOfRooms == 2) {
-                livingRoomSize = 10000;
-                kitchenSize = 6000;
-                bathroomSize = 3500;
+                livingRoomSize = 10.000;
+                kitchenSize = 6.000;
+                bathroomSize = 3.500;
 
                 if (room.getRoomType().equalsIgnoreCase("living room")) {
                     if (room.getRoomSize() < livingRoomSize) {
@@ -87,10 +88,10 @@ public class Check {
                 }
 
             } else if (numOfRooms == 3) {
-                livingRoomSize = 10000;
-                kitchenSize = 6000;
-                masterBedroomSize = 10500;
-                bathroomSize = 3500;
+                livingRoomSize = 10.000;
+                kitchenSize = 6.000;
+                masterBedroomSize = 10.500;
+                bathroomSize = 3.5;
 
                 if (room.getRoomType().equalsIgnoreCase("living room")) {
                     if (room.getRoomSize() < livingRoomSize) {
@@ -144,11 +145,11 @@ public class Check {
 
 
             } else if (numOfRooms == 4) {
-                livingRoomSize = 12000;
-                kitchenSize = 6000;
-                bedroomSize = 9000;
-                masterBedroomSize = 10500;
-                bathroomSize = 3500;
+                livingRoomSize = 12.000;
+                kitchenSize = 6.000;
+                bedroomSize = 9.000;
+                masterBedroomSize = 10.500;
+                bathroomSize = 3.500;
 
                 if (room.getRoomType().equalsIgnoreCase("living room")) {
                     if (room.getRoomSize() < livingRoomSize) {
@@ -204,11 +205,11 @@ public class Check {
                     }
                 }
             } else if (numOfRooms == 5) {
-                livingRoomSize = 12000;
-                kitchenSize = 6000;
-                bedroomSize = 9000;
-                masterBedroomSize = 10500;
-                bathroomSize = 4500;
+                livingRoomSize = 12.000;
+                kitchenSize = 6.000;
+                bedroomSize = 9.000;
+                masterBedroomSize = 10.500;
+                bathroomSize = 4.500;
 
                 if (room.getRoomType().equalsIgnoreCase("living room")) {
                     if (room.getRoomSize() < livingRoomSize) {
@@ -263,11 +264,11 @@ public class Check {
                     }
                 }
             } else if (numOfRooms == 6) {
-                livingRoomSize = 12000;
-                kitchenSize = 6000;
-                bedroomSize = 9000;
-                masterBedroomSize = 10500;
-                bathroomSize = 4500;
+                livingRoomSize = 12.000;
+                kitchenSize = 6.000;
+                bedroomSize = 9.000;
+                masterBedroomSize = 10.500;
+                bathroomSize = 4.500;
 
                 if (room.getRoomType().equalsIgnoreCase("living room")) {
                     if (room.getRoomSize() < livingRoomSize) {
@@ -323,11 +324,11 @@ public class Check {
                 }
 
             } else if (numOfRooms >= 7) {
-                livingRoomSize = 16000;
-                kitchenSize = 6000;
-                bedroomSize = 9000;
-                masterBedroomSize = 10500;
-                bathroomSize = 6000;
+                livingRoomSize = 16.000;
+                kitchenSize = 6.000;
+                bedroomSize = 9.000;
+                masterBedroomSize = 10.500;
+                bathroomSize = 6.000;
 
                 if (room.getRoomType().equalsIgnoreCase("living room")) {
                     if (room.getRoomSize() < livingRoomSize) {
@@ -389,8 +390,9 @@ public class Check {
         {
             messages.add("You do not meet the requirements for an appartment");
         }
-        if (issueSomewhere == false) {
+        if (issueSomewhere == false && issueAlreadyDisplayed == 0) {
             messages.add("No issues found!");
+            ++issueAlreadyDisplayed;
         }
         return messages;
     }

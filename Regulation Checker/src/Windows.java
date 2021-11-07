@@ -56,17 +56,13 @@ public class Windows {
     public static void checkRooms(String filePath){
         ArrayList<Room> roomList = FileReader.loadRooms(filePath);
         ArrayList<String> messageList=new ArrayList<>();
-        int i = 0;
         for(Room room : roomList){
             ArrayList<String>messages = Check.numOfRooms(FileReader.getRoomCounter(),room, roomList);
             if(messages!=null)
             {
                 for(String message: messages) {
-                    if(message.equalsIgnoreCase("You do not meet the requirements for an appartment") && i == 0)
-                    {
-                        ++i;
+
                         messageList.add(message);
-                    }
                 }
             }
         }
